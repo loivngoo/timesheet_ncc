@@ -1,5 +1,5 @@
 export interface AuthenticateModel {
-  username: string;
+  userNameOrEmailAddress: string;
 
   password: string;
 

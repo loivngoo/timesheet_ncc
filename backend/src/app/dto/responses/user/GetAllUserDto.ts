@@ -2,7 +2,7 @@ import { PUDto } from "..";
 import { Branch, Level, ProjectType, Sex } from "../../../enums";
 
 export interface GetAllUserDto {
-  userName: string;
+  username: string;
   name: string;
   surname: string;
   emailAddress: string;

@@ -52,7 +52,7 @@ export const CONFIGURATION_WORKING_TIME = {
 export const FAKE_TIMEKEEPING = {
   timekeepingId: 0,
   userId: 0,
-  userName: "string",
+  username: "string",
   userType: 0,
   userEmail: "string",
   avatarPath: "string",

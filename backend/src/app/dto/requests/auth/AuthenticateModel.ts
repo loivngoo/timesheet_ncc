@@ -1,8 +1,7 @@
-export interface AuthenticateModel{
-    userNameOrEmailAddress: string;
-  
-    password: string;
-  
-    rememberClient?: boolean;
-  }
-  
+export interface AuthenticateModel {
+  username: string;
+
+  password: string;
+
+  rememberClient?: boolean;
+}

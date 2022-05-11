@@ -121,7 +121,7 @@ class UserService extends BaseService<UserRepository> {
 
   public create = async (user: CreateUserDTO): Promise<UserDTO> => {
     try {
-      const isExist = await this._repos.findByUsername(user.userName);
+      const isExist = await this._repos.findByUsername(user.username);
 
       if (isExist) {
         throw new ApiError(
@@ -165,7 +165,7 @@ class UserService extends BaseService<UserRepository> {
 
       for (let user of users) {
         user = pick(user, [
-          "userName",
+          "username",
           "name",
           "surname",
           "emailAddress",

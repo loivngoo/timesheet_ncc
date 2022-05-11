@@ -24,7 +24,7 @@ class TimesheetController {
       const status = +req.query.status;
 
       const result: TimesheetDto[] = await this._business.getAll(
-        userId,
+        //userId,
         startDate,
         endDate,
         status

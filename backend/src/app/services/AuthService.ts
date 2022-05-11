@@ -21,9 +21,9 @@ class AuthService extends BaseService<UserRepository> {
 
   public authenticate = async (request: AuthenticateModel) => {
     try {
-      const { userNameOrEmailAddress, password } = request;
+      const { username, password } = request;
 
-      const user = await this._repos.findByUsername(userNameOrEmailAddress);
+      const user = await this._repos.findByUsername(username);
 
       if (!user) {
         throw new ApiError(

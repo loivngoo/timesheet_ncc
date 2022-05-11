@@ -80,9 +80,9 @@ abstract class BaseRepository<T extends Document> {
     }
   };
 
-  public findByUsername = async (userName: string) => {
+  public findByUsername = async (username: string) => {
     try {
-      return await this._model.findOne({ userName });
+      return await this._model.findOne({ username });
     } catch (error) {
       throw new ApiError(HttpStatusCode.NOT_FOUND, `Error in repository`);
     }

@@ -5,7 +5,7 @@ import { TypeUser, Level, Branch, Sex } from "../app/enums";
 export interface IUser extends IBase {
   id: number;
 
-  userName: string;
+  username: string;
 
   name: string;
 

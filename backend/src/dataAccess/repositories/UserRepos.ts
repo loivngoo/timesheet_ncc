@@ -98,7 +98,7 @@ class UserRepository extends BaseRepository<IUser> {
     let items = await this._model
       .find(
         {},
-        "id userName name surname emailAddress phoneNumber address isActive fullName roleNames type salary salaryAt startDateAt managerId branch sex creationTime morningWorking allowedLeaveDay userCode jobTitle level registerWorkDay morningStartAt morningEndAt afternoonWorking afternoonEndAt avatarPath"
+        "id username name surname emailAddress phoneNumber address isActive fullName roleNames type salary salaryAt startDateAt managerId branch sex creationTime morningWorking allowedLeaveDay userCode jobTitle level registerWorkDay morningStartAt morningEndAt afternoonWorking afternoonEndAt avatarPath"
       )
       .skip(filter.skipCount)
       .limit(filter.maxResultCount)

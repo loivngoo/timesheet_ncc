@@ -9,15 +9,15 @@ import { PasswordManager } from "../../app/tools";
 const UserSchema: mongoose.Schema = new mongoose.Schema<IUser>({
   id: { type: Number },
 
-  userName: { type: String, required: true },
+  username: { type: String},
 
-  name: { type: String, require: true },
+  name: { type: String},
 
-  surname: { type: String, require: true },
+  surname: { type: String },
 
-  password: { type: String, require: true },
+  password: { type: String},
 
-  emailAddress: { type: String, require: true },
+  emailAddress: { type: String},
 
   phoneNumber: { type: String },
 
